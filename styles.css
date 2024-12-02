@@ -1,0 +1,173 @@
+/* General Body and Font Settings */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+p.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #007bff, #00c853);
+  color: white;
+  padding: 120px 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  animation: fadeInUp 2s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  animation: fadeInUp 2.5s ease-out;
+}
+
+.hero a.btn {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  animation: fadeInUp 3s ease-out;
+  transition: all 0.3s ease;
+}
+
+.hero a.btn:hover {
+  background-color: #28a745;
+  transform: translateY(-5px);
+}
+
+/* Hover and Animations for About, Services, Portfolio */
+.about-box, .service-card, .portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover, .service-card:hover, .portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Cards */
+.service-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+  color: #007bff;
+}
+
+.service-card h4 {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-item img {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item h5 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-form .form-control {
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff;
+}
+
+.contact-form button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #28a745;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00c853;
+}
+
+footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .service-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+  }
+}
